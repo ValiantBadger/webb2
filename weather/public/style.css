@@ -1,9 +1,55 @@
 body {
-    background-color: lightgreen;
+    
+    padding: 7px;
+    margin: 20px;
+    
 }
 
-.Grön {
-    color: red;
-    background-color: green;
+
+.img {
+    margin-left: 1000px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    padding-top: 20px;
+    border-radius: 100px;
 }
 
+
+
+body{
+    background-color:#66D0FF;
+  }
+  .cloud{ 
+     margin-top:500px;
+     margin-right: 300px;
+     width:350px;
+     height:120px;
+     background:#ECEFF1;
+     box-shadow: 10px 10px rgba(0,0,0,0.2);
+     border-radius:100px;
+     top: 0;
+     right: 0;
+     position: absolute;
+     
+  }
+  .cloud::after, .cloud::before{
+      content:"";
+      position:relative;
+      display:inline-block;
+      background:inherit;
+      border-radius:inherit;
+  }
+  .cloud::after{
+      width:100px;
+      height:100px;
+      top:-220px;
+      left:50px;
+  }
+  .cloud::before{
+      width:180px;
+      height:180px;
+      top: -70px;
+      left:130px;
+  }

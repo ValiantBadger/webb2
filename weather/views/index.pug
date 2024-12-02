@@ -1,13 +1,30 @@
-html 
-    head 
-        title Red or Green  
-        style  
-            include ../public/style.css
-            
-    body 
-        h1 red or green
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        title Weather
 
-        a(href="/gron") Grön
+    body
+        h1 Weather
 
         
-        a(href="/rod") Röd
+        form(action="/", method="get")
+            label(for="date") Välj en dag:
+            input(type="date", id="date", name="date")
+            button(type="submit") Submit
+
+        if hours.length > 0
+            h2 Weather for : #{selectedDate}
+            each hour in hours
+                div
+                    h3= hour.date
+                    h4= hour.temp + ' grader celsius'
+        else
+            p det måste vara 5 dagar efter start datumet 
+
+
+img(src="we.png", alt="" width="500" class="img")
+
+<div class="cloud"></div>
