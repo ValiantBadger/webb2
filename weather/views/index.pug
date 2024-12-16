@@ -18,9 +18,10 @@ html(lang="en")
         if hours.length > 0
             h2 Weather for : #{selectedDate}
             each hour in hours
-                div
+                <div >
                     h3= hour.date
                     h4= hour.temp + ' grader celsius'
+                    </div>
         else
             p det måste vara 5 dagar efter start datumet 
 
