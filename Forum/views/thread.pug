@@ -1,0 +1,12 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Forum 
+        link(rel="stylesheet", href="/fostyle.css")
+    body 
+        h1 Forum 9000 
+            each post in postList
+                h2=post.text
+                p= post.post_creation_date 
+                p= post.username 

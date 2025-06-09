@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        title Click and buy 
+    body 
+        h1 Fordon
+
+        
+        <ul>
+        <li><a href="/index">Hem</a></li>
+        <li><a class="fordon">Fordon</a></li>
+        <li style="float:right"><a href="/om">Om</a></li>
+        <li style="float:right"><a href="/kontakt">Kontakt</a></li>
+        </ul>
+
+        
+
+        div(class="vehicle-display")
+            each vehicle in vehicles
+                div(class="vehicle")
+                    h2=vehicle.model
+                    img(src="/images/" + vehicle.img)
+
+        

@@ -1,0 +1,62 @@
+body{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 30px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+.active {
+  background-color: gray;
+}
+
+.vehicle-display {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap:7%;
+
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.vehicle {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 5%;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+}
+
+.vehicle h2 {
+  margin-top: 0;
+}
+
+.vehicle img {
+  width: 80%;
+}

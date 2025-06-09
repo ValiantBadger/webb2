@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(to bottom, #add8e6, #00008b);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 20vh;
+    background-color: black;
+}
+
+* {
+    color: white;
+    font-size: 24px;
+}
+
+a {
+    font-family: 'Arial', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+}
+
+body, a {
+    font-weight: bold;
+}
+
+p::first-letter, a::first-letter {
+    text-transform: uppercase;
+}

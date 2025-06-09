@@ -1,0 +1,12 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Forum
+    body 
+        h1 Forum 8000 
+            each user in userList
+                h2=user.username
+                p=user.password 
+                p=user.icon_path 
+                p=user.bio 

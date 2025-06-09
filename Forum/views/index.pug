@@ -1,0 +1,16 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Forum
+        link(rel="stylesheet", href="/manin.css")
+    body 
+        h1 Forum 6000
+            each category in categoryList
+                a(href="/category/" + category.id) 
+                    h2=category.title 
+                
+                p=category.description
+
+
+        
